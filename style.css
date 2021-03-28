@@ -1,0 +1,354 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+:root {
+  --bg-color: white;
+  --navbar-bg-color: green;
+  --shade-color: #32468d;
+  --lighten-color: #00e6b3;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  width: 100vw;
+  height: 8rem;
+  position: relative;
+  border-top: 2rem solid var(--shade-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .logo {
+  width: 45vw;
+  height: auto;
+  background: #ff2e93;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #ff2e93), to(#00e6b3));
+  background: linear-gradient(0deg, #ff2e93 19%, #00e6b3 100%);
+}
+
+section .logo h1 {
+  font-size: 3rem;
+  color: white;
+  margin-left: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  -webkit-animation: dk 4s ease infinite;
+          animation: dk 4s ease infinite;
+}
+
+@-webkit-keyframes dk {
+  0% {
+    margin-left: 20rem;
+  }
+  50% {
+    margin-left: 25rem;
+  }
+  100% {
+    margin-left: 20rem;
+  }
+}
+
+@keyframes dk {
+  0% {
+    margin-left: 20rem;
+  }
+  50% {
+    margin-left: 25rem;
+  }
+  100% {
+    margin-left: 20rem;
+  }
+}
+
+section nav {
+  width: 55vw;
+  height: auto;
+  padding: 1.2rem 1.5rem;
+}
+
+section nav a {
+  margin: 0rem 3.5rem;
+  font-size: 1.8rem;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section nav a:first-child {
+  color: #e0036e;
+}
+
+section nav a::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  height: 0.2rem;
+  top: 100%;
+  left: 0;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  background-color: black;
+}
+
+section nav a::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  height: 0.2rem;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  background-color: black;
+}
+
+section nav a:hover::before {
+  width: 100%;
+}
+
+section nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .left-side {
+  width: 55vw;
+  margin-left: 6rem;
+  height: auto;
+  text-transform: uppercase;
+}
+
+main .left-side::before {
+  content: " ";
+  position: absolute;
+  width: 20.3rem;
+  left: 0;
+  top: 12%;
+  z-index: -1;
+  height: 60rem;
+  background-color: var(--lighten-color);
+}
+
+main .left-side h2 {
+  font-size: 4.7rem;
+  font-weight: 300;
+  position: relative;
+}
+
+main .left-side h2::before {
+  content: "";
+  width: 34.9rem;
+  height: 0.3rem;
+  position: absolute;
+  background-color: black;
+  top: 4.2rem;
+  left: 14rem;
+}
+
+main .left-side h1 {
+  font-size: 6.5rem;
+  letter-spacing: 0.4rem;
+  line-height: 12rem;
+}
+
+main .left-side h3 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+main .left-side .button {
+  position: absolute;
+  top: 70%;
+  padding: 0rem;
+  margin: 0.5rem 0rem;
+}
+
+main .left-side .button a {
+  margin-right: 8rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  padding: 1.2rem 2rem;
+  background-color: #e0036e;
+  color: #020024;
+}
+
+main .left-side .button a:first-child {
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+main .left-side .button a:nth-child(2) {
+  background: transparent;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  border: 0.19rem solid #e0036e;
+}
+
+main .left-side .button a:nth-child(2):hover {
+  color: white;
+  background-color: #e0036e;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+main .right-side {
+  margin-left: -35%;
+}
+
+main .right-side img {
+  max-width: 60rem;
+  height: 50rem;
+  margin-left: -20%;
+}
+
+footer {
+  width: 100vw;
+  bottom: 0%;
+  height: 5rem;
+  position: absolute;
+  background-color: var(--shade-color);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+@media screen and (max-width: 778px) {
+  html {
+    font-size: 45%;
+  }
+  main .right-side {
+    margin-left: 65%;
+    margin-top: -14%;
+  }
+  main .left-side .button {
+    top: 93%;
+    left: 17%;
+  }
+  section .logo {
+    width: 35vw;
+  }
+  @-webkit-keyframes dk {
+    0% {
+      margin-left: 1rem;
+    }
+    50% {
+      margin-left: 3rem;
+    }
+    100% {
+      margin-left: 1rem;
+    }
+  }
+  @keyframes dk {
+    0% {
+      margin-left: 1rem;
+    }
+    50% {
+      margin-left: 3rem;
+    }
+    100% {
+      margin-left: 1rem;
+    }
+  }
+  section nav {
+    width: 65vw;
+    height: auto;
+  }
+  section nav a {
+    margin: 5rem 1rem;
+  }
+  main .left-side {
+    width: 55vw;
+    margin-top: 3.2rem;
+    margin-left: -15rem;
+  }
+  main .right-side img {
+    max-width: 54rem;
+    height: 50rem;
+    margin-left: -23%;
+  }
+  main .left-side::before {
+    content: " ";
+    position: absolute;
+    width: 26.3rem;
+    left: 0;
+    top: 10%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 779px) and (max-width: 1023px) {
+  html {
+    font-size: 55%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
